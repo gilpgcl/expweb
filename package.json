@@ -1,0 +1,18 @@
+{
+    "name": "expweb",
+    "description": "Experimentos de servicios web",
+    "version": "1.0.0",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/gilpgcl/expweb.git"
+    },
+    "keywords": [],
+    "author": "Gilberto Pacheco Gallegos",
+    "license": "ISC",
+   "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+ }
