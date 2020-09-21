@@ -10,7 +10,7 @@
     <p><output id=salida></output></p>
     <script>
       llama();
-      async llama() {
+      async function llama() {
         try {
           const resp = await fetch("/.netlify/functions/hello?nombre=pp");
           if (resp.ok) {
