@@ -1,3 +1,4 @@
+import fetch from 'node-fetch';
 exports.handler = async event => {
   const URL = "https://firestore.googleapis.com/v1/projects/gilpgmp/databases/(default)/documents/mascota";
   let respuesta = "";
