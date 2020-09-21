@@ -9,7 +9,7 @@
     "keywords": [],
     "author": "Gilberto Pacheco Gallegos",
     "license": "ISC",
-   "dependencies": {
-    "node-fetch": "^2.6.1"
-   }
+    "dependencies": {
+      "node-fetch": "^2.6.1"
+    }
  }
