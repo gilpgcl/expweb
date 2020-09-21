@@ -15,7 +15,7 @@
           const resp = await fetch("/.netlify/functions/saludo?nombre=pp");
           if (resp.ok) {
             const txt = await resp.text();
-            alert(txt);
+            salida.value = txt;
           } else {
             alert(resp.statusText);
           }
