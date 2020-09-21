@@ -1,8 +1,8 @@
 exports.handler = async event => {
-  const URL_LUZ = "https://firestore.googleapis.com/v1/projects/gilpgmp/databases/(default)/documents/mascota";
+  const URL = "https://firestore.googleapis.com/v1/projects/gilpgmp/databases/(default)/documents/mascota";
   let respuesta = "";
   try {
-    const resp = await fetch(URL_LUZ);
+    const resp = await fetch(URL);
     if (resp.ok) {
       respuesta = await resp.text();
     } else {
