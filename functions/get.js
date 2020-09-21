@@ -12,5 +12,8 @@ exports.handler = async event => {
     console.log(e);
     respuesta = e.message;
   }
-  return respuesta;
+  return {
+    statusCode: 200,
+    body: respuesta
+  };
 }
