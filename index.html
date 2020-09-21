@@ -1,1 +1,29 @@
-<h1>Hola</h1>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Funciones</title>
+  </head>
+  <body>
+    <h1>Hola</h1>
+    <p><output id=salida></output></p>
+    <script>
+      llama();
+      async llama() {
+        try {
+          const resp = await fetch("/.netlify/functions/hello?nombre=pp");
+          if (resp.ok) {
+            const txt = await resp.text();
+            alert(txt);
+          } else {
+            alert(resp.statusText);
+          }
+        } catch (e) {
+          console.log(e);
+          alert(resp.statusText);
+        }
+      }
+    </script>
+  </body>
+</html>
