@@ -2,9 +2,6 @@
     "name": "expweb",
     "description": "Experimentos de servicios web",
     "version": "1.0.0",
-    "scripts": {
-      "build": "netlify-lambda build lambda"
-    },
     "repository": {
       "type": "git",
       "url": "https://github.com/gilpgcl/expweb.git"
