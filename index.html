@@ -12,7 +12,7 @@
       llama();
       async function llama() {
         try {
-          const resp = await fetch("/.netlify/functions/hello?nombre=pp");
+          const resp = await fetch("/.netlify/functions/saludo?nombre=pp");
           if (resp.ok) {
             const txt = await resp.text();
             alert(txt);
