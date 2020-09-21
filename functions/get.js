@@ -1,4 +1,4 @@
-const fetch = require('node-fetch').default;
+const fetch = require('node-fetch');
 exports.handler = async event => {
   const URL_LUZ = "https://firestore.googleapis.com/v1/projects/gilpgmp/databases/(default)/documents/mascota";
   let respuesta = "";
