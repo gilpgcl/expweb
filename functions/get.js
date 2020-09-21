@@ -1,4 +1,4 @@
-export.handler = async event => {
+exports.handler = async event => {
   const URL_LUZ = `https://firestore.googleapis.com/v1/projects/gilpgmp/databases/(default)/documents/mascota;
   let respuesta = "";
   try {
