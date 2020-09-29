@@ -3,27 +3,28 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Funciones</title>
+    <title>Saludo con Servicio</title>
+    <link href="css/estilos.css" rel="stylesheet">
+    <script src="cmp/mi-footer.js"></script>
+    <script src="js/ProxySaludo.js"></script>
   </head>
   <body>
-    <h1>Hola</h1>
-    <p><output id=salida></output></p>
-    <script>
-      llama();
-      async function llama() {
-        try {
-          const resp = await fetch("/.netlify/functions/saludo?nombre=pp");
-          if (resp.ok) {
-            const txt = await resp.text();
-            salida.value = txt;
-          } else {
-            alert(resp.statusText);
-          }
-        } catch (e) {
-          console.log(e);
-          alert(resp.statusText);
-        }
-      }
-    </script>
+    <form action="javascript:saluda();">
+      <h1>Saludo con Servicio</h1>
+      <p>
+        <label>
+          Nombre
+          <input type="text" id="inNombre" required>
+        </label>
+      </p>
+      <p><button>Calcular</button></p>
+      <p><output id=outSaludo></output></p>
+    </form>
+    <footer>
+      <p>
+        <mi-footer></mi-footer>
+      </p>
+    </footer>
+    <script src="js/ctrlSaludo.js"></script>
   </body>
 </html>
