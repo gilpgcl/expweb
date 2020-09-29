@@ -1,4 +1,4 @@
-class ProxySaludo {
+export class ProxySaludo {
   async saluda(nombre) {
     const resp = await fetch("/.netlify/functions/ServicioSaludo?nombre="
       + encodeURIComponent(nombre));
